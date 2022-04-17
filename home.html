@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+<body>
+<!-- HEADER -->
+<header>
+<a href="#" class="logo">Logo</a>
+<div class="menu-toggle"></div>
+<nav>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<div class="clearfix"></div>
+</header>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('.menu-toggle').toggleClass('active')
+             $('nav').toggleClass('active')
+        })
+    })
+    </script>
+
+
+<!-- BODY -->
+
+   <section class="zoom">
+       <img src="./pic/mountain1.png" id="layer1">
+    <img src="./pic/mountain2.png" id="layer2">
+    <img src="./pic/text.png" id="text">
+   </section>
+   <section class="content">
+       
+    <h2 class="h2">VISIT NEPAL 2020</h2>
+       
+       <div class="banner"><div class="bann">
+        
+        <img src="./pic/img.jpg" height="240px">
+       </div>
+        <img src="./pic/flag.png" height="240px">
+           <p class="para">Welcome visitors to celebrate the year 2020 which is chosen as national tourism year of Nepal after the year 2011 which
+        was the primary authority tourism year of new Federal Democratic Republic of Nepal. The government of Nepal has declared that the 2020 has been deducted due to the covid-19  The government and tourism
+        department of Nepal authoritatively reported that Nepal will take year 2020 as "Visit Nepal 2020", a year committed to
+        tourism industry of Nepal with vision of making a reasonable brand picture of Nepal as travel and vacationer
+        destination, backing up the tourism foundations of Nepal, enhance the growth of tourism industry, and enhance locale
+        tourism as supportable industry. The legislature has wanted to accommodate more than one million visitors amid the year
+        of “Visit Nepal 2020”.</p> </div>  </section>
+       <script type="text/Javascript">
+    var layer1 = document.getElementById('layer1')
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll',function(e){
+        var offset = window.pageYOffset;
+        scroll = offset;
+        layer1.style.width = (100 + scroll/5) + '%';
+    });
+
+    var layer2 = document.getElementById('layer2')
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll',function(e){
+        var offset = window.pageYOffset;
+        scroll = offset;
+        layer2.style.width = (100 + scroll/5) + '%';
+        layer2.style.left = scroll/50 + '%';
+    });
+
+    var text = document.getElementById('text')
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll',function(e){
+        var offset = window.pageYOffset;
+        scroll = offset;
+        layer2.style.width = (100 + scroll/5) + '%';
+        text.style.top =  - scroll/20 + '%';
+    });
+    </script>
+   
+ 
+       
+            
+      
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./pic/POKHARA.jpg"height="300px"> </div>
+            <div class="swiper-slide"><img src="./pic/sagarmatha.jpg" height="300px"> </div>
+            <div class="swiper-slide"><img src="./pic/lumbini.jpg"height="300px"></div>
+            <div class="swiper-slide"><img src="./pic/BIRATNAGAR.jpg"height="300px"></div>
+            <div class="swiper-slide"><img src="./pic/ktm.jpg"height="300px"></div>
+            <div class="swiper-slide"><img src="./pic/NAGARKOT.jpg"height="300px"></div>
+            <div class="swiper-slide"><img src="./pic/Sagarmatha_national_Park.jpg" height="300px"> </div>
+            <div class="swiper-slide"><img src="./pic/Tilicho-Lake.jpg" height="300px"> </div>
+            <div class="swiper-slide"><img src="./pic/Rara-lake-Nepal.jpg" height="300px"> </div>
+            <div class="swiper-slide"><img src="./pic/Poonhill-View.jpg" height="300px"> </div>
+            <div class="swiper-slide"><img src="./pic/GoshaiKund.jpg" height="300px"> </div>
+            <div class="swiper-slide"><img src="./pic/Mt.Everest-Base-Camp.jpg" height="300px"> </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+    
+</script><br><br><br><h1 class="h1">POPULAR PLACES TO VISIT</h1> <br> <br> <br><br><br><br>
+<div class="container">
+    <div class="card">
+        <div class="imgbox">
+            <img src="./pic/Tilicho-Lake.jpg" height="400px" width="300px">
+        </div>
+        <div class="details">
+            <h3>TILICHO LAKE</h3><p>
+                Tilicho Lake is situated 4,920 m above the sea level in Manang district. The famous Marsyangdi River emerges from this
+                lake. To make the visit of other popular destinations of Manang viz. Thorang pass, Muktinath temple and Jomsom is
+                interesting and memorable one definitely has to reach here. The Sharad (autumn) season is the best time to roam around
+                Tilicho Lake.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgbox">
+            <img src="./pic/sagarmatha.jpg" height="400px" width="300px">
+        </div>
+        <div class="details">
+            <h3>SAGARMATHA</h3>
+            <p>
+                Sagarmatha is an exceptional area with dramatic mountains, glaciers and deep valleys, dominated by Mount Everest, the
+                highest peak in the world (8,848 m). Several rare species, such as the snow leopard and the lesser panda, are found in
+                the park. The presence of the Sherpas, with their unique culture, adds further interest to this site.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgbox">
+            <img src="./pic/Rara-lake-Nepal.jpg" height="400px" width="300px">
+        </div>
+        <div class="details">
+            <h3>RARA LAKE</h3>
+            <p>
+                Rara Lake is the biggest and deepest fresh water lake in the Nepalese Himalayas. It is the main feature of Rara National
+                Park, located in Jumla and Mugu Districts. In September 2007, it was declared a Ramsar site, covering 1,583 ha (6.11
+                sq mi) including the surrounding wetland.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgbox">
+            <img src="./pic/Poonhill-View.jpg" height="400px" width="300px">
+        </div>
+        <div class="details">
+            <h3>POON HILL</h3>
+            <p>
+                Poon Hill is a unique Hill station overlooking the Annapurna Massif range and Dhaulagiri mountain range, located
+                on border of Myagdi District and Kaski District in Gandaki Pradesh of Nepal. This lookout is the key viewpoint in the
+                Ghorepani Poon Hill trek, and observes beautiful mountain peaks, fog and valleys.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgbox">
+            <img src="./pic/POKHARA.jpg" height="400px" width="300px">
+        </div>
+        <div class="details">
+            <h3>POKHARA</h3>
+            <p>
+                Pokhara is a metropolitan city in Nepal, which serves as the capital
+                of Gandaki Pradesh. It is the country's largest metropolitan city in terms of area and second largest in terms of
+                populations. The city also serves as the headquarters of Kaski District. Pokhara is located 200 kilometres (120
+                miles) west of the capital, Kathmandu. The altitude varies from 827 metres (2,713 feet) in the southern part to 1,740
+                metres (5,710 feet) in the north.[3] The Annapurna Range, with three out of the ten highest peaks in the world —
+                Dhaulagiri, Annapurna I and Manaslu — is within 15–35 mi (24–56 km) of the valley.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgbox">
+            <img src="./pic/lumbini.jpg " height="400px" width="300px">
+        </div>
+        <div class="details">
+            <h3>LUMBINI</h3>
+            <p>
+                Lumbinī is a Buddhist pilgrimage site
+                in the Rupandehi District of Province No. 5 in Nepal. It is the place where, according to Buddhist tradition, Queen
+                Mahamayadevi gave birth to Siddhartha Gautama in 563 BCE. Gautama, who achieved Enlightenment some time around 528 BCE, became the Buddha and founded Buddhism. Lumbini is one of many magnets for pilgrimage that sprang up
+                in places pivotal to the life of the Buddha.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="footer-content">
+<div class="footer-section about">
+<h2 class="logo-text"><span>VISITNEPAL</span>2020</h2><br>
+<p>Coming to Nepal is coming to an experience that is only yours. From the remotest corners to the urban landscape, Nepal
+    nepal is one of the peaceful place in the world.
+embodies a sensory experience of colours, sounds, sights and tastes. Visit Nepal welcomes you to life’s amazing moments.</p>
+
+divison of the region of nepal 
+
+
+
+<div class="contact">
+    <span><i class="fas-phone"></i>&nbsp; +977-9815427160</span>
+  <span><i class="fas-envelope"></i>&nbsp; magaranup981@gmail.com</span>
+</div>
+<div class="socials">
+<a href="https://www.facebook.com/anup.anup.3910829"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/magaranup981/"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="https://www.youtube.com/channel/UCy51P79TlJFUpbCw9t3lLww"><i class="fab fa-youtube"></i></a>
+</div>
+
+</div>
+<div class="footer-section links">
+<h2>Quick Links</h2>
+<br>
+<ul>
+     <a href=""><li>Events</li></a>
+    <a href="">
+        <li>Events</li>
+    </a>
+</ul>
+</div>
+<div class="footer-section contact-form">
+<h2>Contact us</h2><br>
+<form action="home.html" method="post"><input type="email" name="email" class="text-input contact-input" placeholder="your email address..."> <br>
+<textarea name="message" class="text-input contact-input" placeholder="your message..."></textarea><br><button type="submit" class="btn btn-big"><i class="fas fa-envelope"></i> Send</button></form>
+
+</div>
+
+    </div>
+    <div class="footer-bottom">
+    &copy;VISITNEPAL2020||Designed by Anup Maski Rana Magar
+</div>
+</div>
+
+</body>
+
+</html>
